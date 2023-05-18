@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-style: italic;
+}
+
+h2 {
+    border-bottom: 3px solid #000000;
+    padding-bottom: 16px;
+    font-style: italic;
+}
+
+header {
+    padding: 16px 0;
+    background-color:#000000 ;
+    color: #ecf0f1;
+    font-weight: bold;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 825px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+section {
+    padding: 24px 0;
+    color: #000000;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-inside {
+    margin-right: 32px;
+    max-width: 300px;
+}
+
+.container2 {
+    max-width: 825px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-store {
+    margin-bottom: 32px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+}
+.produtos img {
+    margin-top: 32px;
+    max-width: 100%;
+}
+
+.produtos button {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color:#000000;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.produtos button:hover {
+    background-color: #000000c4;
+}
+
+@media screen and (max-width: 640px) {
+    .container2 {
+        max-width: 80%
+    }
+
+    header .container {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 5%;
+    }
+
+    .container img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+section .container,
+.produtos {
+    display: block;
+}
+
+.produtos img {
+    width: 100%;
+}
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container2 {
+        max-width: 80%
+    }
+
+    header .container {
+        max-width: 80%;
+    }
+
+    .container img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+section .container,
+.produtos {
+    display: block;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 2%;
+    row-gap: 0%;
+}
+
+.produtos img {
+    width: 100%;
+}
+
+}
